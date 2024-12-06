@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>WORDLE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1 style="text-align: center;">WORDLE</h1>
+        <div id="attempts-left">Sisa Percobaan: 6</div>
+        <input type="text" id="guess-input" maxlength="5" placeholder="Masukkan angka 5 digit">
+        <button id="submit-btn">Tebak</button>
+        <div id="guesses-container"></div>
+        <div id="message"></div>
+    </div>
+
+    <!-- Modal Game Over -->
+    <div id="game-over-modal">
+        <div class="modal-content">
+            <h2 id="game-over-title">Permainan Berakhir</h2>
+            <p id="game-over-message"></p>
+            <div class="modal-buttons">
+                <button class="modal-btn btn-restart">Coba Lagi</button>
+                <button class="modal-btn btn-exit">Keluar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
